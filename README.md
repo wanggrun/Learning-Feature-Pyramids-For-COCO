@@ -1,13 +1,12 @@
-# Training ImageNet and PASCAL VOC2012 via Learning Feature Pyramids
+# Training COCO 2017 Detection and Segmentation via Learning Feature Pyramids
 
-The code is provided by [Guangrun Wang](https://wanggrun.github.io/) ([Rongcong Chen](http://www.sysu-hcp.net/people/) also provides contributions).
+The code is provided by [Guangrun Wang](https://wanggrun.github.io/).
 
 Sun Yat-sen University (SYSU)
 
 ### Table of Contents
 0. [Introduction](#introduction)
-0. [ImageNet](#imagenet)
-0. [PASCAL VOC2012](#voc)
+0. [COCO](#coco)
 0. [Citation](#citation)
 
 ### Introduction
