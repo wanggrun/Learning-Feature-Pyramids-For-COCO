@@ -44,9 +44,9 @@ as the `R50-C4-2x` entries in
 
 + The model is first pretrained on the ImageNet-1K, where the training scripts can be found [here](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
 
-   [Baidu Pan](https://pan.baidu.com/s/1SKEmrjcYA-NR9oFBOD7Y2w), code: 269o
+   [Baidu Pan](https://wanggrun.github.io), code: 269o
 
-   [Google Drive](https://drive.google.com/drive/folders/1pVSCQ6gap0b73FFr8bF-5p5Am6e2rXRr?usp=sharing)
+   [Google Drive](https://wanggrun.github.io)
 
 
 + Training script for COCO object detection and instance segmentation:
@@ -64,9 +64,9 @@ python3 train.py  --evaluate output.json  --load /home/grwang/seg/train_log_resn
 
    Model trained for evaluation on COCO 2017 object detection and instance segmentation task:
 
-   [Baidu Pan](https://pan.baidu.com/s/1C7r10EeZEOIn0njRCuuR1g), code: 7dl0
+   [Baidu Pan](https://wanggun.github.io), code: 7dl0
 
-   [Google Drive](https://drive.google.com/drive/folders/1c3Fr6yC_rwXGF4hJB4ADmtd2AF8wsO51?usp=sharing)
+   [Google Drive](https://wanggrun.github.io)
 
 
 ## Citation
