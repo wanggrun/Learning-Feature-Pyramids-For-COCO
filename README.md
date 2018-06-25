@@ -6,7 +6,7 @@ Sun Yat-sen University (SYSU)
 
 ### Table of Contents
 0. [Introduction](#introduction)
-0. [COCO](#coco)
+0. [Scripts](#scripts)
 0. [Citation](#citation)
 
 ### Introduction
@@ -38,28 +38,11 @@ MaskRCNN results contain both bbox and segm mAP.
 The two R50-C4 360k models have the same configuration __and mAP__
 as the `R50-C4-2x` entries in
 [Detectron Model Zoo](https://github.com/facebookresearch/Detectron/blob/master/MODEL_ZOO.md#end-to-end-faster--mask-r-cnn-baselines).
-The other models listed here do not correspond to any configurations in Detectron.
 
 
+### Scripts
 
-### ImageNet
-
-+ First:
-```
-cd pyramid/ImageNet/ 
-```
-
-+ Training script:
-```
-python imagenet-resnet.py   --gpu 0,1,2,3,4,5,6,7   --data_format NHWC  -d 101  --mode resnet --data  [ROOT-OF-IMAGENET-DATASET]
-```
-
-+ Testing script:
-```
-python imagenet-resnet.py   --gpu 0,1,2,3,4,5,6,7  --load [ROOT-TO-LOAD-MODEL]  --data_format NHWC  -d 101  --mode resnet --data  [ROOT-OF-IMAGENET-DATASET] --eval
-```
-
-+ Trained Models:
++ The model is first pretrained on the ImageNet-1K, where the training scripts can be found [here](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
 
    [Baidu Pan](https://pan.baidu.com/s/1SKEmrjcYA-NR9oFBOD7Y2w), code: 269o
 
