@@ -23,7 +23,7 @@ MaskRCNN results contain both bbox and segm mAP.
 
 |Method|`MASKRCNN_BATCH`|resolution |schedule| AP bbox | AP bbox 50 | AP bbox 75
 |   -    |    -         |    -      |   -    |   -     |   -        |   -       |
-|ResNet-50-C4  |512     |(800, 1333)|360k    |37.7     |   57.9     |   40.9    |
+|ResNet50      |512     |(800, 1333)|360k    |37.7     |   57.9     |   40.9    |
 |Ours  |512             |(800, 1333)|360k    |39.8     |   60.2     |   43.4    |
 
 
