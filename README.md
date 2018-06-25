@@ -16,8 +16,10 @@ This repository contains the training & testing code on [COCO 2017](http://cocod
 
 ### Results
 
-These models are trained with different configurations on trainval35k and evaluated on minival using mAP@IoU=0.50:0.95.
+These models are trained with different configurations on COCO 2017 training set and evaluated on COCO 2017 validation set.
 MaskRCNN results contain both bbox and segm mAP.
+
++ COCO Object Detection
 
 |Backbone|`FASTRCNN_BATCH`|resolution |schedule|mAP (bbox/segm)|Time          |
 |   -    |    -           |    -      |   -    |   -           |   -          |
@@ -30,25 +32,14 @@ MaskRCNN results contain both bbox and segm mAP.
 |R101-C4 |512             |(800, 1333)|280k    |40.1/34.4      |70h on 8 P100s|
 |R101-C4 |512             |(800, 1333)|360k    |40.8/35.1      |63h on 8 V100s|
 
++ COCO Instance Segmentation
+
 The two R50-C4 360k models have the same configuration __and mAP__
 as the `R50-C4-2x` entries in
 [Detectron Model Zoo](https://github.com/facebookresearch/Detectron/blob/master/MODEL_ZOO.md#end-to-end-faster--mask-r-cnn-baselines).
 The other models listed here do not correspond to any configurations in Detectron.
 
 
-
-
-
-
-+ Segmentation Visualization:
-
-   1. (a) input images; (b) segmentation results.
-        ![segmentation visualization](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/results/vis.jpg)
-
-   2. (a) images & ground truths; (b) trimap of learning feature pyramids; (c) trimap of the original ResNet.
-        ![trimaps](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/results/trimap.jpg)
-
-   3. It achieves 81.0% mIoU on PASCAL VOC2011 segmentation [leaderboard](http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6), a significance improvement over its baseline DeepLabV2 (79.6%).
 
 ### ImageNet
 
