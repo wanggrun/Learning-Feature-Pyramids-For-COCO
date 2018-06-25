@@ -21,16 +21,11 @@ MaskRCNN results contain both bbox and segm mAP.
 
 + COCO Object Detection
 
-|Backbone|`FASTRCNN_BATCH`|resolution |schedule|mAP (bbox/segm)|Time          |
+|Method|`MASKRCNN_BATCH`|resolution |schedule|mAP (bbox/segm)|Time          |
 |   -    |    -           |    -      |   -    |   -           |   -          |
-|R50-C4  |64              |(600, 1024)|280k    |33.1           |18h on 8 V100s|
-|R50-C4  |512             |(800, 1333)|360k    |36.6           |49h on 8 V100s|
-|R50-FPN |512             |(800, 1333)|360k    |37.5           |28h on 8 V100s|
-|R50-C4  |256             |(800, 1333)|280k    |36.8/32.1      |39h on 8 P100s|
-|R50-C4  |512             |(800, 1333)|360k    |37.8/33.1      |51h on 8 V100s|
-|R50-FPN |512             |(800, 1333)|360k    |38.1/34.9      |38h on 8 V100s|
-|R101-C4 |512             |(800, 1333)|280k    |40.1/34.4      |70h on 8 P100s|
-|R101-C4 |512             |(800, 1333)|360k    |40.8/35.1      |63h on 8 V100s|
+|ResNet-50-C4  |512             |(800, 1333)|360k    |37.8/33.1      |-|
+|Ours  |512             |(800, 1333)|360k    |37.8/33.1      |-|
+
 
 + COCO Instance Segmentation
 
