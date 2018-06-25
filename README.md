@@ -17,11 +17,11 @@ This repository contains the training & testing code on [COCO 2017](http://cocod
 ### Results
 
 These models are trained with different configurations on COCO 2017 training set and evaluated on COCO 2017 validation set.
-MaskRCNN results contain both bbox and segm mAP.
+MaskRCNN results contain both bbox and segm mAP. 
 
 + COCO Object Detection
 
-|Method|`MASKRCNN_BATCH`|resolution |schedule|mAP (bbox/segm)|Time          |
+|Method|`MASKRCNN_BATCH`|resolution |schedule| AP bbox | AP bbox 50 | AP bbox 75|
 |   -    |    -           |    -      |   -    |   -           |   -          |
 |ResNet-50-C4  |512             |(800, 1333)|360k    |37.8/33.1      |-|
 |Ours  |512             |(800, 1333)|360k    |37.8/33.1      |-|
