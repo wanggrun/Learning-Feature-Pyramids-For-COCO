@@ -23,11 +23,17 @@ MaskRCNN results contain both bbox and segm mAP.
 
 |Method|`MASKRCNN_BATCH`|resolution |schedule| AP bbox | AP bbox 50 | AP bbox 75
 |   -    |    -         |    -      |   -    |   -     |   -        |   -       |
-|ResNet-50-C4  |512     |(800, 1333)|360k    |37.8/33.1|   -        |   -       |
-|Ours  |512             |(800, 1333)|360k    |37.8/33.1|   -        |   -       |
+|ResNet-50-C4  |512     |(800, 1333)|360k    |37.7     |   57.9     |   40.9    |
+|Ours  |512             |(800, 1333)|360k    |39.8     |   60.2     |   43.4    |
 
 
 + COCO Instance Segmentation
+
+
+|Method|`MASKRCNN_BATCH`|resolution |schedule| AP mask | AP mask 50 | AP mask 75
+|   -    |    -         |    -      |   -    |   -     |   -        |   -       |
+|ResNet-50-C4  |512     |(800, 1333)|360k    |32.8     |   54.3     |   34.7    |
+|Ours  |512             |(800, 1333)|360k    |34.6     |   56.7     |   36.8    |
 
 The two R50-C4 360k models have the same configuration __and mAP__
 as the `R50-C4-2x` entries in
