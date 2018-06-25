@@ -16,7 +16,7 @@ This repository contains the training & testing code on [COCO 2017](http://cocod
 
 ## Results
 
-These models are trained with different configurations on COCO 2017 training set and evaluated on COCO 2017 validation set.
+These models are trained on COCO 2017 training set and evaluated on COCO 2017 validation set.
 MaskRCNN results contain both bbox and segm mAP. 
 
 + COCO Object Detection
@@ -42,7 +42,7 @@ as the `R50-C4-2x` entries in
 ## Usage
 
 
-+ The model is first pretrained on the ImageNet-1K, where the training scripts can be found [here](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
++ The model is first pretrained on the ImageNet-1K, where the training scripts can be found [Guangrun Wang's github](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
 
    [Baidu Pan](https://wanggrun.github.io), code: 269o
 
