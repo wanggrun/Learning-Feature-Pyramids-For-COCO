@@ -6,15 +6,15 @@ Sun Yat-sen University (SYSU)
 
 ### Table of Contents
 0. [Introduction](#introduction)
-0. [Scripts](#scripts)
+0. [Usage](#usage)
 0. [Citation](#citation)
 
-### Introduction
+## Introduction
 
 This repository contains the training & testing code on [COCO 2017](http://cocodataset.org/#home) object detection and instance segmentation via learning feature pyramids (LFP). LFP is originally used for human pose machine, described in the paper "Learning Feature Pyramids for Human Pose Estimation" (https://arxiv.org/abs/1708.01101). We extend it to the object detection and instance segmentation.
 
 
-### Results
+## Results
 
 These models are trained with different configurations on COCO 2017 training set and evaluated on COCO 2017 validation set.
 MaskRCNN results contain both bbox and segm mAP. 
@@ -39,8 +39,7 @@ The schemes have the same configuration __and mAP__
 as the `R50-C4-2x` entries in
 [Detectron Model Zoo](https://github.com/facebookresearch/Detectron/blob/master/MODEL_ZOO.md#end-to-end-faster--mask-r-cnn-baselines).
 
-
-### Usage
+## Usage
 
 
 + The model is first pretrained on the ImageNet-1K, where the training scripts can be found [here](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
@@ -70,7 +69,7 @@ python3 train.py  --evaluate output.json  --load /home/grwang/seg/train_log_resn
    [Google Drive](https://drive.google.com/drive/folders/1c3Fr6yC_rwXGF4hJB4ADmtd2AF8wsO51?usp=sharing)
 
 
-### Citation
+## Citation
 
 If you use these models in your research, please cite:
 
@@ -82,7 +81,6 @@ If you use these models in your research, please cite:
             year={2017}
         }
 
-### Dependencies
 
 ## Dependencies
 + Python 3; TensorFlow >= 1.4.0 (>=1.6.0 recommended due to a TF bug);
