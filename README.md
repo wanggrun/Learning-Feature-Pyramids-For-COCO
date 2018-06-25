@@ -40,7 +40,8 @@ as the `R50-C4-2x` entries in
 [Detectron Model Zoo](https://github.com/facebookresearch/Detectron/blob/master/MODEL_ZOO.md#end-to-end-faster--mask-r-cnn-baselines).
 
 
-### Scripts
+### Usage
+
 
 + The model is first pretrained on the ImageNet-1K, where the training scripts can be found [here](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
 
@@ -54,13 +55,13 @@ as the `R50-C4-2x` entries in
 python3 train.py --load /home/grwang/seg/train_log_resnet50/imagenet-resnet-d50/model-510000    --gpu 0,1,2,3,4,5,6,7   --logdir mask-pyramid-train
 ```
 
-+ Testing script:
++ Testing script for COCO object detection and instance segmentation:
 ```
 python3 train.py  --evaluate output.json  --load /home/grwang/seg/train_log_resnet50/imagenet-resnet-d50/model-510000    --gpu 0,1,2,3,4,5,6,7   --logdir mask-pyramid-test
 ```
 
 
-+ Trained Models:
++ Trained Models of COCO:
 
    Model trained for evaluation on COCO 2017 object detection and instance segmentation task:
 
@@ -82,8 +83,27 @@ If you use these models in your research, please cite:
         }
 
 ### Dependencies
-+ Python 3
-+ TensorFlow >= 1.3.0
+
+## Dependencies
++ Python 3; TensorFlow >= 1.4.0 (>=1.6.0 recommended due to a TF bug);
++ [pycocotools](https://github.com/pdollar/coco/tree/master/PythonAPI/pycocotools), OpenCV.
++ Pre-trained ImageNet model.
++ COCO data. It needs to have the following directory structure:
+```
+DIR/
+  annotations/
+    instances_train2014.json
+    instances_val2014.json
+    instances_minival2014.json
+    instances_valminusminival2014.json
+  train2014/
+    COCO_train2014_*.jpg
+  val2014/
+    COCO_val2014_*.jpg
+```
+`minival` and `valminusminival` are optional. You can download them
+[here](https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/README.md).
+
 + [Tensorpack](https://github.com/ppwwyyxx/tensorpack)
    The code depends on Yuxin Wu's Tensorpack. For convenience, we provide a stable version 'tensorpack-installed' in this repository. 
    ```
