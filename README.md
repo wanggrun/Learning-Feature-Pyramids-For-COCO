@@ -99,7 +99,7 @@ DIR/
   val2014/
     COCO_val2014_*.jpg
 ```
-`minival` and `valminusminival` are optional. You can download them
+`minival` and `valminusminival` can be download from
 [here](https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/README.md).
 
 + [Tensorpack](https://github.com/ppwwyyxx/tensorpack)
