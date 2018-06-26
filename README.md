@@ -44,9 +44,9 @@ as the `R50-C4-2x` entries in
 
 + The model is first pretrained on the ImageNet-1K, where the training scripts can be found [Guangrun Wang's github](https://github.com/wanggrun/Learning-Feature-Pyramids/blob/master/README.md). We also provide the trained ImageNet models as follows.
 
-   [Baidu Pan](https://wanggrun.github.io), code: 269o
+   [Baidu Pan](https://pan.baidu.com/s/1ADYUt0QL1Vq42uqz75-W0A), code: zvgd
 
-   [Google Drive](https://wanggrun.github.io)
+   [Google Drive](https://drive.google.com/drive/folders/1zcwLZVFdm8PONL_R6_8TNSLvb1vs6Lh7?usp=sharing)
 
 
 + Training script for COCO object detection and instance segmentation:
@@ -64,9 +64,9 @@ python3 train.py  --evaluate output.json  --load /home/grwang/seg/train_log_resn
 
    Model trained for evaluation on COCO 2017 object detection and instance segmentation task:
 
-   [Baidu Pan](https://wanggun.github.io), code: 7dl0
+   [Baidu Pan](https://pan.baidu.com/s/1MB_ekGnOj8LmgacTXa38Pw), code: w7o9
 
-   [Google Drive](https://wanggrun.github.io)
+   [Google Drive](https://drive.google.com/drive/folders/1O4hBpYC0VIqzqV6tx-q5axU-R9QlmO5C?usp=sharing)
 
 
 ## Citation
@@ -85,7 +85,7 @@ If you use these models in your research, please cite:
 ## Dependencies
 + Python 3; TensorFlow >= 1.4.0 (>=1.6.0 recommended due to a TF bug);
 + [pycocotools](https://github.com/pdollar/coco/tree/master/PythonAPI/pycocotools), OpenCV.
-+ Pre-trained ImageNet model.
++ Pre-trained ImageNet model [google drive](https://drive.google.com/drive/folders/1zcwLZVFdm8PONL_R6_8TNSLvb1vs6Lh7?usp=sharing); [baidu pan](https://pan.baidu.com/s/1ADYUt0QL1Vq42uqz75-W0A)(code: zvgd).
 + COCO data. It needs to have the following directory structure:
 ```
 DIR/
