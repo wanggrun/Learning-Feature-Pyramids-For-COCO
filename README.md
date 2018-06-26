@@ -85,7 +85,7 @@ If you use these models in your research, please cite:
 ## Dependencies
 + Python 3; TensorFlow >= 1.4.0 (>=1.6.0 recommended due to a TF bug);
 + [pycocotools](https://github.com/pdollar/coco/tree/master/PythonAPI/pycocotools), OpenCV.
-+ Pre-trained ImageNet model [google drive](https://drive.google.com/drive/folders/1zcwLZVFdm8PONL_R6_8TNSLvb1vs6Lh7?usp=sharing); [baidu pan](https://pan.baidu.com/s/1ADYUt0QL1Vq42uqz75-W0A)(code: zvgd).
++ Pre-trained ImageNet model: [google drive](https://drive.google.com/drive/folders/1zcwLZVFdm8PONL_R6_8TNSLvb1vs6Lh7?usp=sharing); [baidu pan](https://pan.baidu.com/s/1ADYUt0QL1Vq42uqz75-W0A)(code: zvgd).
 + COCO data. It needs to have the following directory structure:
 ```
 DIR/
